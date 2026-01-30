@@ -1,0 +1,23 @@
+[package]
+name = "event-listener"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+event-listener = "*"
+# event-listener = { path = "../../../../.fork/event-listener" }
+pin-project-lite = "*"
+
+[lints.rust]
+missing_docs = "deny"
+unsafe_code = "allow"
+unused_variables = "allow"
+private_bounds = "allow"
+
+[lints.clippy]
+new_without_default = "allow"
+len_without_is_empty = "allow"
+missing_safety_doc = "allow"
+module_inception = "allow"
+should_implement_trait = "allow"
+type_complexity = "allow"
